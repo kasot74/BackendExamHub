@@ -66,3 +66,4 @@ C:\Users\簡全亨\source\repos\BackendExamHub\BackendExamHub\obj\Debug\net8.0\r
 C:\Users\簡全亨\source\repos\BackendExamHub\BackendExamHub\obj\Debug\net8.0\BackendExamHub.pdb
 C:\Users\簡全亨\source\repos\BackendExamHub\BackendExamHub\obj\Debug\net8.0\BackendExamHub.genruntimeconfig.cache
 C:\Users\簡全亨\source\repos\BackendExamHub\BackendExamHub\obj\Debug\net8.0\ref\BackendExamHub.dll
+C:\Users\簡全亨\source\repos\BackendExamHub\BackendExamHub\obj\Debug\net8.0\BackendExamHub.sourcelink.json
