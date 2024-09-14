@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackendExamHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40db7aa5f3f8cdd8741c243109e070bf6252b64b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b008a2dae0a90dc9b518c10a8aec8f775921b6f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackendExamHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackendExamHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
