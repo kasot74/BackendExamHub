@@ -1,0 +1,29 @@
+CREATE TABLE Myoffice_ACPD (
+    acpd_sid INT PRIMARY KEY IDENTITY(1,1), -- 使用者主鍵，自動增量
+    acpd_cname NVARCHAR(60) NOT NULL,       -- 中文名稱
+    acpd_ename NVARCHAR(40),                -- 英文名稱
+    acpd_sname NVARCHAR(40),                -- 簡稱
+    acpd_email NVARCHAR(60),                -- 使用者信箱
+    acpd_status TINYINT NOT NULL,           -- 狀況 0=正常, 99=不正常
+    acpd_stop BIT NOT NULL,                 -- 是否停用不可登入
+    acpd_stopMemo NVARCHAR(600),            -- 停用原因
+    acpd_LoginID NVARCHAR(30) NOT NULL,     -- 登入帳號
+    acpd_LoginPW NVARCHAR(60) NOT NULL,     -- 登入密碼
+    acpd_memo NVARCHAR(120),                -- 備註
+    acpd_nowdatetime DATETIME DEFAULT GETDATE(), -- 新增日期
+    appd_nowid NVARCHAR(20),                -- 新增人員代碼
+    acpd_upddatetime DATETIME,              -- 修改日期
+    acpd_updid NVARCHAR(20)                 -- 修改人員代碼
+);
+
+
+CREATE TABLE Myoffice_ExecutionLog (
+    DeLog_AuthID INT IDENTITY(1,1) PRIMARY KEY,         -- 自訂索引碼，自動增量
+    DeLog_StoredPrograms NVARCHAR(120) NOT NULL,        -- 預存程序名稱
+    DeLog_GroupID UNIQUEIDENTIFIER NOT NULL,            -- 執行的群組代碼
+    DeLog_isCustomDebug BIT NOT NULL,                   -- 是否認定為 Bug
+    DeLog_ExecutionProgram NVARCHAR(120),               -- 執行的項目
+    DeLog_ExecutionInfo NVARCHAR(MAX),                  -- 執行的內容或是說明
+    DeLog_VerifyNeeded BIT NOT NULL,                    -- 此錯誤是否要進行檢查
+    exelog_nowdatetime DATETIME DEFAULT GETDATE()       -- 新增日期，預設為當前時間
+);
